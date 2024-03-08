@@ -25,7 +25,7 @@ app.get("/", (request, response) => {
 });
 
 // Routes
-// app.use("/users", require("./controllers/UserController"));
+app.use("/products", require("./controllers/ProductsController"));
 
 // const UserRouter = require('./controllers/UserController');
 // app.use('/users', UserRouter);
