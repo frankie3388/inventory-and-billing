@@ -29,20 +29,25 @@ const ProductsSchema = new Schema({
 		required: true,
 		unique: false
 	},
-	imagedata: {
-		type: [String],
+	description: {
+		type: String,
 		required: true,
 		unique: false
-	},
-	imageUrls: {
-		type: [String],
-		required: false,
-		unique: false
-	},
-	user: {
-		type: mongoose.Types.ObjectId,
-		ref: 'User'
 	}
+	// imagedata: {
+	// 	type: [String],
+	// 	required: true,
+	// 	unique: false
+	// },
+	// imageUrls: {
+	// 	type: [String],
+	// 	required: false,
+	// 	unique: false
+	// },
+	// user: {
+	// 	type: mongoose.Types.ObjectId,
+	// 	ref: 'User'
+	// }
 });
 
 const Products = mongoose.model('Products', ProductsSchema);
